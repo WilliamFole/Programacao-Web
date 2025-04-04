@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W-Biblioteca de Programacao Web</title>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+        <!-- CABEÇALHO -->
+    <header>
+        <div class="container" style="display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 20px;">
+            <div class="logo" style="font-size: 24px; font-weight: bold;">
+                <span>W.B.F | BIBLIOTECA</span>
+                <span style="color: #3498db;">WEB MODERNA</span>
+            </div>
+            <nav>
+                <ul style="display: grid; grid-template-columns: repeat(4, auto); justify-content: end; gap: 20px; margin: 0; padding: 0;">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#pacotes">Pacotes</a></li>
+                    <li><a href="#documentacao">Documentação</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- BANNER -->
+    <section id="home" class="banner">
+        <div class="container">
+            <h2>Biblioteca de Componentes Web</h2>
+            <p>Recursos prontos para HTML, CSS e JavaScript</p>
+            <a href="#pacotes" class="btn">Ver Pacotes</a>
+        </div>
+    </section>
+    
+    <!-- PACOTES -->
+    <section id="pacotes" class="pacotes">
+        <div class="container">
+            <h2>Nossos Pacotes</h2>
+            <div class="pacotes-grid">
+                <div class="card">
+                    <h3>HTML Básico</h3>
+                    <p>Templates e elementos essenciais para começar seu projeto.</p>
+                    <a href="#" class="btn">Baixar</a>
+                </div>
+                
+                <div class="card">
+                    <h3>CSS Utilitários</h3>
+                    <p>Classes prontas para estilização rápida.</p>
+                    <a href="#" class="btn">Baixar</a>
+                </div>
+                
+                <div class="card">
+                    <h3>JS Essencial</h3>
+                    <p>Funções JavaScript comuns para projetos web.</p>
+                    <a href="#" class="btn">Baixar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- DOCUMENTAÇÃO -->
+    <section id="documentacao" class="documentacao">
+        <div class="container">
+            <h2>Documentação</h2>
+            <div class="doc-container">
+                <aside class="sidebar">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a href="#">Introdução</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </aside>
+                
+                <main class="conteudo">
+                    <h3>Como Usar</h3>
+                    <p>Para começar, basta incluir os arquivos em seu projeto:</p>
+                    
+                    <pre><code>&lt;link rel="stylesheet" href="WBF.css"&gt;
+&lt;script src="WBF.js"&gt;&lt;/script&gt;</code></pre>
+                    
+                    <p>Depois você pode usar as classes e funções disponíveis.</p>
+                </main>
+            </div>
+        </div>
+    </section>
+    
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Williamo fole | Programacao Web </p>
+        </div>
+    </footer>
+</body>
+</html>

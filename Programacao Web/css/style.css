@@ -1,0 +1,254 @@
+<style>
+        /* --- ESTILOS GERAIS --- */
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        
+        /* --- CABEÇALHO --- */
+        /* --- CABEÇALHO ATUALIZADO --- */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+}
+
+.logo span:last-child {
+    color: #3498db;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: end;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #3498db;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+}
+        
+        /* --- BANNER PRINCIPAL COM ANIMAÇÃO --- */
+        .banner {
+            background: #3498db;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .banner h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+        
+        .banner p {
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+        
+        .btn:hover {
+            background: #c0392b;
+            transform: scale(1.05);
+        }
+        
+        /* --- PACOTES COM HOVER EFFECT --- */
+        .pacotes {
+            padding: 40px 0;
+            background: #f9f9f9;
+        }
+        
+        .pacotes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #3498db;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .card h3 {
+            margin-top: 0;
+            color: #3498db;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover h3 {
+            color: #e74c3c;
+        }
+        
+        /* --- DOCUMENTAÇÃO --- */
+        .documentacao {
+            padding: 40px 0;
+        }
+        
+        .doc-container {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .conteudo {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        pre {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        
+        /* --- RODAPÉ --- */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        /* --- ANIMAÇÕES --- */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 768px) {
+            .doc-container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
